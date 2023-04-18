@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: manrope, sans-serif;
+    box-sizing: border-box;
+}
+
+/* ********** NAVBAR ********** */
+
+nav {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+
+nav ul li {
+    border-top: 5px solid rgba(128, 0, 128, 0);
+    padding-bottom: 15px;
+    padding-top: 10px;
+}
+
+nav ul li:hover {
+    cursor: pointer;
+    color: purple;
+    border-top: 5px solid purple;
+}
+
+/* *************** HEADER ***************** */
+
+header {
+    background-image: url(./assets/img/bg.jpg);
+    background-size: cover;
+    background-position: 100%;
+    height: 700px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#logo {
+    padding: 100px 0 25px 0;
+    width: 100%;
+    height: auto;
+}
+
+#logo img {
+    width: 39%;
+}
+
+header h1 {
+    font-size: 1.92rem;
+    color: white;
+}
+
+header button {
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 20px 50px;
+    margin: 45px auto;
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.35rem;
+}
+
+header button:hover {
+    animation: backcolor 0.7s ease-in-out forwards;
+    cursor: pointer;
+    color: gray;
+}
+
+header button .fas {
+    position: relative;
+    left: 15px;
+}
+
+header button:hover i {
+    color: rgb(0, 0, 0);
+}
+
+@keyframes backcolor {
+    100% {
+        background-color: rgb(255, 255, 255);
+    }
+}
+
+/* HEADER TEXT */
+
+.header-text {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.header-text p {
+    position: relative;
+    font-size: 1.2rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* ****************SECTION ICON-PART**************** */
+
+.icon-part {
+    background: #161516;
+}
+
+.icon-part .icon-part-container {
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+}
+
+.list-icon-part {
+    color: white;
+}
+
+.list-icon-part .lip-logo {
+    padding: 75px 0 0 0;
+}
+
+.list-icon-part h3 {
+    padding: 5px 0 10px 0;
+    text-transform: uppercase;
+}
+.list-icon-part p{
+    font-family: 'Montserrat', sans-serif;
+    /* padding: 0 30px 10px 30px ; */
+    font-size: 1.1rem;
+}
+.list-icon-part button{
+    padding: 10px 35px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    margin: 15px 0 75px 0;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 0.8rem;
+}
